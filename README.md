@@ -1,7 +1,7 @@
 # aws_exercise
 Django Rest Framework application contenerizied in Docker
 
-## To start the APP
+## To start the Docerfile
     Open your terminal
     $ git clone https://github.com/bartoszbad/aws_exercise
     $ cd aws_exercise # Browse into the repo root directory
@@ -9,6 +9,19 @@ Django Rest Framework application contenerizied in Docker
     $ docker build -f application_docker.Dockerfile -t <name_of_docker_image> .
     To run docker image and host application:
     $ docker run -it -p <number_of_port>:80 -d <name_of_docker_image>
+
+
+## To start the Docker-compose.yml
+    Open your terminal
+    $ git clone https://github.com/bartoszbad/aws_exercise
+    $ cd aws_exercise # Browse into the repo root directory
+    To build Docker-Compose Image:
+    $ docker-compose run web python app/manage.py migrate
+    To run docker image and host application:
+    $ docker-compose build
+    To run docker image and host application:
+    $ docker-compose up
+
 
 
 ## Endpoints:
@@ -36,6 +49,8 @@ returns:
 “status”: “ok”,
 “number”: <some random number from 0 to 100>
 }
+
+
 
 ## License:
 Please see LICENSE file
