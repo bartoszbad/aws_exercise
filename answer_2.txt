@@ -1,0 +1,1 @@
+Credentials can be stored on Amazon S3 by setting up an S3 bucket. To make sure that only resources running in a specific Amazon Virtual Private Cloud can read the S3 bucket content the S3 endpoint can be implemented. This allow to create private connection between cloud and S3 without access over the Internet.

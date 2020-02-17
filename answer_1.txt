@@ -1,0 +1,1 @@
+Using the environment variables to retrieve that information from outside the container. Also Docker secrets can be used to manage this credentials in safe way, however  it won’t work for the standalone containers
